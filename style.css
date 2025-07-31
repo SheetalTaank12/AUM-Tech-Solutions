@@ -1079,6 +1079,12 @@ Mobile menu hidden by default*/
   font-weight: 600;
 }
 
+.clients{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .reason {
  
   padding: 0.8rem;
