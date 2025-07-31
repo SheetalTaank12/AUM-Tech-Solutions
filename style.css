@@ -18,19 +18,9 @@
         font-family: 'Nunito', sans-serif;
        
     }
-    
-    /* h1, h2, h3, h4, h5, h6 {
-        font-family: 'Poppins', sans-serif;
-    } */
-
-
+   
     section.home {
         height: 100vh;
-        /* background: linear-gradient(135deg, #00498D, #00264D, #000B18); */
-        /* background: radial-gradient(circle at 20% 30%, #00c9a7 0%, transparent 40%),
-        radial-gradient(circle at 80% 70%, #1f2937 0%, transparent 50%),
-        linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
-
         color: white;
         display: flex;
         align-items: center;
@@ -43,20 +33,18 @@
 
     .hero-content {
         max-width: 800px;
-       
-        
     }
 
     .hero-content h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
         font-weight: 700;
-        transform: translateX(-100%);  /* Start off to the left */
+        transform: translateX(-100%); 
   opacity: 0;
   transition: all 1.5s ease;
     }
     .hero-content h1.show {
-  transform: translateX(0);     /* Move into position */
+  transform: translateX(0);     
   opacity: 1;
 }
 
@@ -66,12 +54,12 @@
         font-weight: 400;
         color: #ddd;
     
-  transform: translateX(100%);  /* Start off to the right */
+  transform: translateX(100%); 
   opacity: 0;
   transition: all 1.5s ease;
 }
 .hero-content p.show {
-  transform: translateX(0);     /* Move into position */
+  transform: translateX(0);     
   opacity: 1;
 }
 
@@ -83,10 +71,8 @@
         border: none;
         margin-left: 1rem;
         border-radius: 30px;
-        /* background-color: #00ffff; */
         background: linear-gradient(135deg, #ff00ff, #00ffff);
-color: white;
-
+        color: white;
         color: #fff;
         cursor: pointer;
         
@@ -96,8 +82,6 @@ color: white;
    .hero-content .b1 {
   transform: translateX(-100%) rotate(-30deg);
   opacity: 0;
-
-  /* 👇 This is only for entry animation, not hover */
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
@@ -110,7 +94,6 @@ color: white;
   transform: translateX(100%) rotate(30deg);
   opacity: 0;
 
-  /* 👇 Entry animation only */
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 
@@ -137,9 +120,6 @@ color: white;
      top: 0;
      left: 0;
     }
-    
-  
- 
 
     nav {
     display: flex;
@@ -151,7 +131,7 @@ color: white;
     left: 0;
     width: 100%;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    background: rgba(255, 255, 255, 0.1); 
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
@@ -270,8 +250,6 @@ color: white;
 
 /* Services Section Background */
 .servicesContainer {
-  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  min-height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -281,10 +259,6 @@ color: white;
   position: relative;
   z-index: 1;
   width: 100%;
-    /* background-image: url("images/webdev.jfif"); */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 
 .services{
@@ -308,7 +282,6 @@ color: white;
   z-index: 0;
  ;}
 
-/* services heading */
 .services-heading {
   text-align: center;
   font-size: 2.8rem;
@@ -317,8 +290,6 @@ color: white;
   text-shadow: 0 0 10px rgba(0,255,255,0.2);
 }
 
-
-/* Each Service Card */
 .serviceCard {
   background: #660066;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -336,7 +307,6 @@ color: white;
   overflow: hidden;
 }
 
-/* Hover effect with 3D scale */
 .serviceCard:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
@@ -368,7 +338,7 @@ color: white;
   border: 2px solid #ffcc00;
 }
 
-/* Optional: Add a glowing border animation */
+/*Add a glowing border animation */
 .serviceCard::before {
   content: "";
   position: absolute;
@@ -378,9 +348,9 @@ color: white;
   height: calc(100% + 4px);
   border-radius: 22px;
 background: linear-gradient(45deg, 
-  #66ffff,   /* Soft cyan */
-  #d966ff,   /* Light magenta */
-  #9932cc    /* Amethyst purple */
+  #66ffff,   
+  #d966ff,  
+  #9932cc    
 );
   z-index: 0;
   opacity: 0;
@@ -574,10 +544,10 @@ background: linear-gradient(45deg,
 
 .chooseUs {
 background: linear-gradient(135deg, 
-  #1a0033,  /* dark purple */
-  #0d1b4c,  /* navy/dark blue */
-  #003f5c,  /* deep blue-cyan */
-  #002f3f   /* dark cyan */
+  #1a0033, 
+  #0d1b4c, 
+  #003f5c, 
+  #002f3f   
 );
 
   min-height: 100vh;
@@ -598,7 +568,7 @@ background: linear-gradient(135deg,
 
 
 .reason {
-  background-color: #fffacd; /* bright clean card */
+  background-color: #fffacd;
   color: #1e1e1e;
   padding: 15px;
   margin: 20px auto;
@@ -616,7 +586,7 @@ background: linear-gradient(135deg,
 .reasonTitle {
   font-size: 1.8rem;
   margin-bottom: 12px;
-  color: #0d47a1; /* a professional blue */
+  color: #0d47a1; 
 }
 
 .reasonInfo {
@@ -633,7 +603,6 @@ background: linear-gradient(135deg,
   border-radius: 0.5rem;
 }
 
-/* Optional responsive grid for wider screens */
 @media screen and (min-width: 768px) {
   .chooseUs .reason {
     display: flex;
@@ -647,11 +616,10 @@ background: linear-gradient(135deg,
 
 
 .testimonials {
-  background: #0e0e0e; /* Dark site background */
+  background: #0e0e0e; 
   padding: 60px 20px;
   text-align: center;
-  /* height: 100vh;
-  width: 100%; */
+  
 }
 
 .review-heading{
@@ -673,7 +641,7 @@ background: linear-gradient(135deg,
   gap: 15px;
 }
 .testCard {
-  background: #0d47a1; /* Light card */
+  background: #0d47a1;
   color: #fff;
   padding: 30px 25px;
   border-radius: 20px;
@@ -905,16 +873,16 @@ Mobile menu hidden by default*/
         font-weight: 500;
     }
     #theme-toggle{
-      position: fixed;       /* or 'absolute' depending on context */
+      position: fixed;      
     top: 1rem;
     right: 1rem;
     z-index: 9999;         /* ensure it's on top of everything */
     }
      #hamburger{
-      position: fixed;       /* or 'absolute' depending on context */
+      position: fixed;       
     top: 0.6rem;
     left: 0.6rem;
-    z-index: 9999;         /* ensure it's on top of everything */
+    z-index: 9999;         
     }
 
     nav #logo{
@@ -1230,14 +1198,12 @@ margin-bottom: 1rem;
 
 } 
 
-/* Light Mode Styles (Override Dark Mode Defaults) */
 body.light-mode {
   background-color: #f5f5f5;
   color: #1e1e1e;
 }
 
 
-/* Example: Light mode cards or sections */
 body.light-mode .card,
 body.light-mode .section {
   background-color: #ffffff;
