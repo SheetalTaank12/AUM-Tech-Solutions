@@ -69,7 +69,7 @@ function sendEmail(e) {
     const subject = encodeURIComponent("New message from " + name); //make email subject
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`); //make email body
 
-    window.location.href = `mailto:aumtechsolution@gmail.com?subject=${subject}&body=${body}`; //fills values in gmail by default so that the user only have to click send in gmail app
+    window.location.href = `mailto:aumtechsolutionofficial@gmail.com?subject=${subject}&body=${body}`; //fills values in gmail by default so that the user only have to click send in gmail app
      //This tells the browser:
 //"Open the user's email app (like Gmail or Outlook) to send an email to yourname@gmail.com, and fill in the subject and body."
   }
