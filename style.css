@@ -1220,6 +1220,8 @@ body.light-mode .nav-menu ul li a{
 }
 body.light-mode .nav-menu ul{
   background-color: #fff;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 body.light-mode nav .logo{
   color: #0d1b4c;
