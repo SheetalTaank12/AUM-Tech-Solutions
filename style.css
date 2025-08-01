@@ -143,6 +143,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+     
 }
 .logo img{
     height: 3.5rem;
@@ -160,7 +161,7 @@
 .nav-menu ul li a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ffffff;
     position: relative;
     padding: 0.5rem;
@@ -188,9 +189,41 @@
 .nav-menu ul li a:hover::after {
     transform: scaleX(1);
 }
-
-
-
+#theme-toggle{
+      position: fixed;      
+    top: 2.5rem;
+    right: 1rem;
+    z-index: 9999;         /* ensure it's on top of everything */
+    }
+.contact-no{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  
+}
+@media screen and (max-width: 768px) {
+  .contact-no{
+    font-size: 0.6rem;
+    
+  }
+  .email-id{
+    font-size: 0.6rem;
+  }
+}
+.email-id{
+  color: #fff;
+  font-size: 0.7rem;
+  margin-left: 3rem;
+}
+.upper-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .about {
   position: relative;
   height: 100vh;
